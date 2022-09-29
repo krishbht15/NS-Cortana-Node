@@ -11,9 +11,11 @@ const Schema= mongoose.Schema;
 const cs=new Schema({
     name:{
         type:String,
+        required:true
     },
     phone_number:{
         type:String,
+        required:true
     }
 }, { versionKey: false })
 const userDetails=mongoose.model("user_details",cs);
